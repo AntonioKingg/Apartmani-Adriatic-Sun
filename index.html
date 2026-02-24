@@ -49,8 +49,11 @@
         background: linear-gradient(to right, #ffffff, #343a40);
     }
 
+    /* ✅ POPRAVLJEN LOGO */
     .navbar-brand img {
         height: 50px;
+        max-width: 100%;
+        object-fit: contain;
     }
 
     .rezervacija-btn {
@@ -66,14 +69,12 @@
     section#onama {
         padding-top: 6rem;
     }
+
     @media (max-width: 991px) {
 
+        /* ✅ manji logo na mobitelu */
         .navbar-brand img {
-            height: 35px;
-        }
-
-        .navbar-brand span {
-            font-size: 18px;
+            height: 40px;
         }
 
         .navbar-collapse {
@@ -105,9 +106,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient fixed-top">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <!-- ✅ uklonjen dupli tekst -->
+        <a class="navbar-brand" href="#">
             <img src="https://raw.githubusercontent.com/AntonioKingg/Apartmani-Adriatic-Sun/refs/heads/main/AdriaticSun.svg" alt="Adriatic Sun Logo">
-            <span class="text-dark">Adriatic Sun</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -280,7 +281,3 @@
 
 </body>
 </html>
-
-
-
-
